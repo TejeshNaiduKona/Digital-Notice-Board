@@ -31,55 +31,6 @@ A full-stack web application for managing and displaying digital notices in educ
 
 ---
 
-## 📁 Project Structure
-
-```
-Digital-Notice-Board/
-├── backend/                  # Node.js + Express server
-│   ├── server.js            # Main server file with all routes
-│   ├── User.js              # User model
-│   ├── Notice.js            # Notice model
-│   ├── userController.js    # User business logic
-│   ├── noticeController.js  # Notice business logic
-│   ├── userRoutes.js        # User API routes
-│   ├── noticeRoutes.js      # Notice API routes
-│   ├── db.js                # Database configuration
-│   ├── package.json
-│   └── .env                 # Environment variables
-│
-├── frontend/                 # React + Vite application
-│   ├── src/
-│   │   ├── AdminDashboard.jsx      # Admin dashboard page
-│   │   ├── AdminLogin.jsx          # Admin login page
-│   │   ├── StudentAuth.jsx         # Student auth page
-│   │   ├── StudentDashboard.jsx    # Student dashboard
-│   │   ├── StudentProfile.jsx      # Student profile
-│   │   ├── ManageNotices.jsx       # Admin notice management
-│   │   ├── IndexPage.jsx           # Landing page
-│   │   ├── Navbar.js               # Navigation component
-│   │   ├── NoticeCard.js           # Notice card component
-│   │   ├── App.jsx                 # Main app component
-│   │   ├── main.jsx                # App entry point
-│   │   ├── index.css               # Global styles
-│   │   ├── App.css                 # App-specific styles
-│   │   ├── AdminDashboard.css
-│   │   ├── ManageNotices.css
-│   │   ├── StudentAuth.css
-│   │   ├── StudentDashboard.css
-│   │   ├── StudentProfile.css
-│   │   ├── styles.css
-│   │   └── assets/                 # Static assets
-│   ├── public/                     # Public assets
-│   ├── vite.config.js             # Vite configuration
-│   ├── eslint.config.js           # ESLint configuration
-│   ├── package.json
-│   └── index.html
-│
-└── README.md                 # This file
-```
-
----
-
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -205,56 +156,6 @@ API calls should be made to `http://localhost:5000` (backend server URL).
 
 ---
 
-## 📦 Dependencies
-
-### Backend
-- **express** - Web framework
-- **mongoose** - MongoDB ODM
-- **bcrypt** - Password hashing
-- **cors** - Cross-origin resource sharing
-- **dotenv** - Environment variables
-- **firebase-admin** - Firebase integration
-- **nodemon** - Development auto-reload (dev dependency)
-
-### Frontend
-- **react** - UI library
-- **react-dom** - React DOM rendering
-- **react-router-dom** - Client-side routing
-- **axios** - HTTP client
-- **bootstrap** - CSS framework
-- **tailwindcss** - Utility-first CSS
-- **react-icons** - Icon library
-- **react-toastify** - Toast notifications
-- **vite** - Build tool
-
----
-
-## 🎯 Usage Examples
-
-### 1. Register a New Student
-1. Navigate to `/student-auth`
-2. Click on "Sign Up"
-3. Fill in the registration form with your details
-4. Submit to create account
-
-### 2. Login as Student
-1. Navigate to `/student-auth`
-2. Enter email and password
-3. Click "Login"
-4. View your dashboard with all available notices
-
-### 3. Admin Login & Post Notice
-1. Navigate to `/admin-login`
-2. Enter admin credentials
-3. Go to `/manage-notices`
-4. Click "Create New Notice"
-5. Fill in notice details and submit
-
-### 4. View Notices by Department
-1. After login, navigate to `/student-dashboard`
-2. See all notices from your department
-3. Click on a notice to see full details
-
 ---
 
 ## 🐛 Troubleshooting
@@ -291,8 +192,6 @@ Remove-Item -Recurse -Force node_modules, package-lock.json
 npm install
 ```
 
----
-
 ## 🔐 Security Features
 
 - 🔒 Password hashing with bcrypt
@@ -302,56 +201,3 @@ npm install
 - 🛡️ MongoDB injection protection via Mongoose
 
 ---
-
-## 📈 Future Enhancements
-
-- [ ] JWT token authentication for better security
-- [ ] Admin authentication system
-- [ ] Email notifications for new notices
-- [ ] File/image upload for notices
-- [ ] Search functionality
-- [ ] Advanced filtering options
-- [ ] User roles and permissions management
-- [ ] Notice categories and tags
-- [ ] Analytics and reporting dashboard
-- [ ] Mobile app (React Native)
-- [ ] Dark mode support
-- [ ] Multi-language support
-- [ ] Push notifications
-
----
-
-## 📄 License
-
-This project is licensed under the ISC License.
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
----
-
-## 📞 Support
-
-For issues and questions, please open an issue in the repository.
-
----
-
-## 🙏 Acknowledgments
-
-- **Express.js** community
-- **MongoDB** documentation
-- **React** ecosystem
-- All contributors and users
-
----
-
-**Made with ❤️ for Educational Institutions**
