@@ -1,0 +1,132 @@
+/* Custom Navbar Styling */
+.custom-navbar {
+    background-color: #1E1E2E !important; /* Dark background */
+    color: #FFFFFF;
+    padding: 15px 20px;
+}
+
+/* Navbar Brand */
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    white-space: nowrap; /* Prevents text wrapping */
+}
+
+/* Navbar Items (Always Visible) */
+.navbar-nav {
+    display: flex;
+    gap: 20px; /* Proper spacing */
+}
+
+/* Make sure navbar items don’t hide on small screens */
+.navbar-nav .nav-item {
+    flex-shrink: 0;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1rem;
+    transition: color 0.3s ease-in-out;
+    white-space: nowrap; /* Ensures text stays in one line */
+}
+
+/* Hover Effects */
+.navbar-nav .nav-link:hover {
+    color: #FF6B00 !important; /* Orange on hover */
+}
+
+/* Logout Link */
+.navbar-nav .nav-link.text-danger {
+    font-weight: bold;
+}
+/* Custom Navbar */
+.custom-navbar {
+    background-color: #1E1E2E !important;
+    color: #FFFFFF;
+    padding: 15px 20px;
+}
+
+/* Navbar Items */
+.navbar-nav {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1rem;
+    transition: color 0.3s ease-in-out;
+    white-space: nowrap;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #FF6B00 !important;
+}
+/* Center the modal properly */
+.modal-dialog {
+    position: fixed;
+    top: 20%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    max-width: 500px; /* Adjust width as needed */
+    width: 100%;
+    z-index: 1050;
+}
+
+/* Dark background overlay for modal */
+.modal.show {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1040;
+}
+
+.modal-backdrop {
+    z-index: 1040 !important;
+}
+
+.modal {
+    z-index: 1050 !important;
+}
+
+.modal-content {
+    z-index: 1055 !important;
+}
+
+
+/* Modal Styling */
+.modal-content {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.modal-header {
+    border-bottom: 1px solid #ddd;
+}
+
+.modal-footer {
+    border-top: 1px solid #ddd;
+}
+.Toastify__toast-container {
+  z-index: 1056 !important; /* Ensures it appears above Bootstrap modals */
+}
+.card {
+    height: 100px; /* Set a fixed height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card h5 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    margin-bottom: 0;
+}

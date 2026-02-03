@@ -1,0 +1,136 @@
+/* Smooth, professional background */
+html, body {
+    background-color: #f4f6f9;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* Ensure the root container takes full height */
+#root, #app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar Styling */
+.custom-navbar {
+    background-color: #2c3e50; /* Dark blue-gray */
+    padding: 12px 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar a {
+    color: white;
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    color: #f39c12; /* Highlight color */
+}
+
+/* Container Styling */
+.container {
+    flex: 1;
+    margin-top: 90px !important;
+    padding-bottom: 50px;
+}
+
+/* Adjust spacing between notice cards */
+.row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Ensures responsive layout */
+    gap: 50px; /* Adds consistent spacing */
+    padding: 25px;
+    justify-content: center;
+}
+
+.small-card {
+    width: 100%; /* Ensures responsiveness */
+    max-width: 350px; /* Prevents exceeding size */
+    min-height: 350px; /* Maintains consistent height */
+    padding: 20px;
+    border-radius: 12px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    background: white;
+}
+
+.small-card:hover {
+    transform: scale(1.05);
+}
+
+/* Card Content */
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+/* Icons inside cards */
+.card-body p {
+    font-size: 0.9rem;
+    color: #555;
+    display: flex;
+    align-items: center;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #2980b9;
+    font-weight: bold;
+}
+
+/* Filter Dropdown */
+.form-select {
+    background: white;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+/* Buttons Styling */
+/* Align buttons in the same row */
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Adds spacing between buttons */
+}
+
+/* Ensure buttons take equal width */
+.btn-container .btn {
+    flex: 1; /* Makes both buttons take equal space */
+    width: auto; /* Prevents full-width buttons */
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .row {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Adjust for smaller screens */
+        gap: 20px;
+    }
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+}
